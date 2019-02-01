@@ -167,9 +167,19 @@ export const ADMIN_MENU = {
       }
     }
   },
-  exportTaxonomies: {
-    title: 'administration.menu.exportTaxonomies',
-    sectionId: ''
+  exportDebateData: {
+    title: 'administration.menu.exportDebateData',
+    sectionId: '1',
+    subMenu: {
+      contributions: {
+        title: 'administration.exportData.contributions',
+        sectionId: '1'
+      },
+      taxonomies: {
+        title: 'administration.menu.exportTaxonomies',
+        sectionId: '2'
+      }
+    }
   },
   landingPage: {
     title: 'administration.landingpage',
@@ -208,10 +218,6 @@ export const ADMIN_MENU = {
       configureVotingProposals: {
         title: 'administration.voteSession.2',
         sectionId: '3'
-      },
-      exportData: {
-        title: 'administration.voteSession.3',
-        sectionId: '4'
       }
     }
   }
@@ -229,10 +235,6 @@ export const PHASES_ADMIN_MENU = {
         title: 'administration.survey.configThematics',
         sectionId: 'configThematics',
         component: ThematicsMenu
-      },
-      exportData: {
-        title: 'administration.survey.exportData',
-        sectionId: '2'
       }
     }
   }

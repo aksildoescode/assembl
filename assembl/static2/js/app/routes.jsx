@@ -32,7 +32,6 @@ import DiscussionAdmin from './pages/discussionAdmin';
 import VoteSessionAdmin from './pages/voteSessionAdmin';
 import ResourcesCenter from './pages/resourcesCenter';
 import LandingPageAdmin from './pages/landingPageAdmin';
-import ExportTaxonomies from './pages/exportTaxonomies';
 import BrightMirrorFiction from './pages/brightMirrorFiction'; // eslint-disable-line import/no-named-as-default
 import { routeForRouter } from './utils/routeMap';
 
@@ -41,6 +40,7 @@ import IntMainPage from './integration/index';
 import Int101Page from './integration/101/index';
 import Int101FormBuilderPage from './integration/101/containers/formBuilder101/formBuilder101';
 import IntBrightMirrorFiction from './integration/brightMirror/pages/brightMirrorFiction';
+import ExportData from './pages/exportData';
 
 const DebateHome = (props) => {
   switch (props.params.phase) {
@@ -78,8 +78,9 @@ const AdminChild = (props: {
     return <ResourcesCenterAdmin {...props} />;
   case 'landingPage':
     return <LandingPageAdmin {...props} section={props.location.query.section} />;
-  case 'exportTaxonomies':
-    return <ExportTaxonomies />;
+
+  case 'exportDebateData':
+    return <ExportData {...props} section={props.location.query.section} />;
   default:
     return (
       <SurveyAdmin

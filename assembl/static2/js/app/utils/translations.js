@@ -638,7 +638,8 @@ const Translations = {
         exportTaxonomies: "Exporter les taxonomies",
         manageProfileOptions: "Options d'inscription",
         personalizeInterface: "Personnaliser l'interface",
-        configureThematic: "Configurer la thématique %{index}"
+        configureThematic: "Configurer la thématique %{index}",
+        exportDebateData: "Exporter les données"
       },
       timelineAdmin: {
         phase: "Phase %{count}",
@@ -867,6 +868,7 @@ const Translations = {
         taxonomySectionTitle: "Exporter les taxonomies",
         translateTheMessagesIn: "Traduire l'ensemble des messages en :",
         anonymous: "Rendre les données anonymes",
+        contributions: "Les contributions des participants",
         vote: {
           voteResultsCsv: "Exporter les données générales du module de vote",
           extractCsvVoters: "Exporter les détails de vote de chaque utilisateur"
@@ -1609,7 +1611,8 @@ const Translations = {
         exportTaxonomies: "Export taxonomies",
         manageProfileOptions: "Registration options",
         personalizeInterface: "Personalize the interface",
-        configureThematic: "Configure the theme %{index}"
+        configureThematic: "Configure the theme %{index}",
+        exportDebateData: "Export the data"
       },
       timelineAdmin: {
         phase: "Phase %{count}",
@@ -1832,6 +1835,7 @@ const Translations = {
         taxonomySectionTitle: "Export taxonomy",
         translateTheMessagesIn: "Translate the messages in:",
         anonymous: "Make the data anonymous",
+        contributions: "Contributions of the participants",
         vote: {
           voteResultsCsv: "Export general data for the vote module",
           extractCsvVoters: "Export vote details for each user"
