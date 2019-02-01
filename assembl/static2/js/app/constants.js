@@ -172,7 +172,7 @@ export const ADMIN_MENU = {
     sectionId: '1',
     subMenu: {
       contributions: {
-        title: 'administration.exportData.contributions',
+        title: 'administration.export.contributions',
         sectionId: '1'
       },
       taxonomies: {
