@@ -874,7 +874,8 @@ const Translations = {
         presets: {
           today: "Aujourd'hui",
           lastWeek: "Semaine dernière",
-          lastMonth: "Mois dernier"
+          lastMonth: "Mois dernier",
+          phase: "Phase %{count}"
         },
         vote: {
           voteResultsCsv: "Exporter les données générales du module de vote",
@@ -1848,7 +1849,8 @@ const Translations = {
         presets: {
           today: "Today",
           lastWeek: "Last week",
-          lastMonth: "Last month"
+          lastMonth: "Last month",
+          phase: "Phase %{count}"
         },
         vote: {
           voteResultsCsv: "Export general data for the vote module",
