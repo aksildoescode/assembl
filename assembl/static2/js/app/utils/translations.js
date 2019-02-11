@@ -876,7 +876,8 @@ const Translations = {
           lastWeek: "Semaine dernière",
           lastMonth: "Mois dernier",
           phase: "Phase %{count}",
-          fullDebate: "Intégralité du débat"
+          fullDebate: "Intégralité du débat",
+          placeHolder: "Presets"
         },
         vote: {
           voteResultsCsv: "Exporter les données générales du module de vote",
@@ -1852,7 +1853,8 @@ const Translations = {
           lastWeek: "Last week",
           lastMonth: "Last month",
           phase: "Phase %{count}",
-          fullDebate: "All of the debate"
+          fullDebate: "All of the debate",
+          placeHolder: "Presets"
         },
         vote: {
           voteResultsCsv: "Export general data for the vote module",
