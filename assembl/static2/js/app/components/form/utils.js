@@ -19,6 +19,7 @@ import { convertEditorStateToHTML, convertEntriesToEditorState, uploadNewAttachm
 import { displayAlert } from '../../utils/utilityManager';
 import { runSerial } from '../administration/saveButton';
 import UploadDocument from '../../graphql/mutations/uploadDocument.graphql';
+import { browserHistory } from '../../router';
 
 export function i18nValueIsEmpty(v: I18nValue): boolean {
   return (
@@ -170,3 +171,7 @@ export function compareEditorState(a: mixed, b: mixed): ?boolean {
   // If customizer returns undefined, comparisons are handled by lodash isEqual.
   return undefined;
 }
+
+export const redirectToPreviousPage = () => {
+  browserHistory.goBack();
+};
