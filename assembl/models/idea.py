@@ -1182,7 +1182,7 @@ class Idea(HistoryMixin, DiscussionBoundBase):
         return [Widget.uri_generic(l.widget_id)
                 for l in self.active_showing_widget_links]
 
-    def get_total_sentiments(self):
+    def get_total_sentiments(self, sentiment_type=None):
         from .action import SentimentOfPost
         from .post import Post, countable_publication_states
         from .generic import Content
@@ -1202,6 +1202,8 @@ class Idea(HistoryMixin, DiscussionBoundBase):
             *SentimentOfPost.get_discussion_conditions(discussion_id)
         )
         query = query.filter(Post.id.in_(post_ids))
+        if sentiment_type is not None:
+            return query.filter(SentimentOfPost.type == 'sentiment:{}'.format(sentiment_type)).count()
         return query.count()
 
     crud_permissions = CrudPermissions(
